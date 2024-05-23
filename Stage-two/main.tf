@@ -10,4 +10,10 @@ terraform {
 resource "vagrant_vm" "vagrantbox" {
   vagrantfile_dir = "../"
   get_ports = true
+
+  provisioner "local-exec" {
+  command = "vagrant provision"
+  working_dir = "../"
 }
+}
+
