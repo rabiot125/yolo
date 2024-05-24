@@ -7,9 +7,10 @@
       - docker-compose
       
 - name: Deploy Containers
-  docker_compose:
+  community.docker.docker_compose_v2:
     project_src: /home/ubuntu/yolo/
     files:
       - "/home/ubuntu/yolo/docker-compose.yml"
-    state: present
+    remove_orphans: true
+    verbose: true
 
