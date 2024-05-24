@@ -12,5 +12,5 @@
     files:
       - "/home/ubuntu/yolo/docker-compose.yml"
     remove_orphans: true
-    verbose: true
+
 
