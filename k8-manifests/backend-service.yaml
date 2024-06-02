@@ -8,4 +8,5 @@ spec:
     app: backend
   ports:
   - port: 5000
+    targetPort: 5000
 

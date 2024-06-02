@@ -14,9 +14,8 @@ spec:
       containers:
       - name: client
         image: kipkoechdon/client-image:v1.0.0
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
+        tty: true
+        stdin: true
+      
         ports:
         - containerPort: 80
