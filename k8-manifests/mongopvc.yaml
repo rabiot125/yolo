@@ -1,16 +1,13 @@
 #Persistent volume claim definition
-
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mongo-pvc
+  name: mongo-data
 spec:
+  accessModes:
+    - ReadWriteOnce
   resources:
     requests:
       storage: 10Gi
- 
-  accessModes:
-    - ReadWriteOnce
-  storageClassName: standard
-  volumeName: mongo-pv
+  storageClassName: custom-standard
 
