@@ -16,6 +16,10 @@ spec:
         image: kipkoechdon/client-image:v1.0.0
         tty: true
         stdin: true
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
       
         ports:
         - containerPort: 3000
