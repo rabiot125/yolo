@@ -30,5 +30,6 @@
 	kubectl apply -f mongopvc.yaml
 	kubectl apply -f mongodb-statefulset.yaml
 2. **Access the Application**
-  
-`[frontend](http://34.41.218.34:3000/)`
+
+     [frontend](http://34.41.218.34:3000/)
+
