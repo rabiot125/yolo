@@ -20,3 +20,6 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 5000
+        env:
+             - name: MONGODB_URI
+               value: mongodb://mongodb:27017/yolomy
