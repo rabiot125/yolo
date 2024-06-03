@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: client
-        image: kipkoechdon/client-image:v1.0.0
+        image: kipkoechdon/client-image:v1.0.2
         tty: true
         stdin: true
         resources:
