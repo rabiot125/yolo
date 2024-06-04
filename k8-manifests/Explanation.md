@@ -25,7 +25,7 @@
 	kubectl apply -f client-deployment.yaml
 	kubectl apply -f client-service.yaml
 	kubectl apply -f mongodb-service.yaml
-	kubectl apply -f new-storage-class.yaml
+	kubectl apply -f storage-class.yaml
 	kubectl apply -f mongopv.yaml
 	kubectl apply -f mongopvc.yaml
 	kubectl apply -f mongodb-statefulset.yaml
